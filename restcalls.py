@@ -14,6 +14,6 @@ count = '3'
 auth = OAuth1(API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 response = requests.get(url+endpoint+'?screen_name='+screen_name+'&count='+count, auth=auth)
 if response.status_code == 200:
-    print ("Authorization Successfull")
+    print ("Authorization Successful")
 for tweet in response.json():
   print (json.dumps(tweet['text']))
