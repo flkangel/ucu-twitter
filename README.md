@@ -1,6 +1,8 @@
 # ucu-twitter
 Creé este repositorio para agregar la documentación del proyecto.
 
+El archivo **ref.md** contiene Links que nos pueden servir de ayuda para el proyecto
+
 El archivo **restcalls.py** tiene un script que utiliza la API REST de ***Twitter***
 
 * Se importan los módulos necesarios
