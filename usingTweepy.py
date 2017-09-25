@@ -6,13 +6,13 @@ from time import sleep
 from monkeylearn import MonkeyLearn
 from requests_oauthlib import OAuth1
 #Monkerlearn Developer APP Credentials
-ML = MonkeyLearn('c07510c44c6c852ec2e9809fe306ae931457f0d1')
+ML = MonkeyLearn('cae9314570751080c2e9f0d19fe306c44c6c852e')
 MODULE_ID = 'cl_u9PRHNzf'
 # Twitter Developer APP Credentials
-API_KEY = 'xMtOqSQCcT5Unc0JEKmlmTsU6'
-API_SECRET = 'jbKHeCK6Z1nEHva4tMPkjZLddI1znmahBjDDE2cNGevilZV2v5'
-ACCESS_TOKEN = '80344712-W2bIaCbzKcZAEdNHBTgB6iA8ScO1gX6LwOF6u6npB'
-ACCESS_TOKEN_SECRET = 'RrYXlNI2t8PihhrF3SwYzj2hX5IWfoF8kZFpIjd64cjJP'
+API_KEY = 'OqSQnc0JEKmlxMtmCcT5UTsU6'
+API_SECRET = 'jbKHeCK6Z1nEHva4tMPkjZLddI12cNGevilZV2vznmahBjDDE5'
+ACCESS_TOKEN = '34471280-W2biA8ScO1gX6LwOpBF6u6n'
+ACCESS_TOKEN_SECRET = 'ihhrFkZFpIjd64RrYXlNI2t8Pcj3SfoF8wYzj2hX5IWJP'
 #Setting up authentication Objects
 auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
 auth.set_access_token( ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
