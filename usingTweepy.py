@@ -18,11 +18,29 @@ auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
 auth.set_access_token( ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 #Authentication
 api = tweepy.API(auth)
-#Search tweets using a keyword in spanish
-query = "MasterChefUY"
+#Search 10 tweets using a keyword in spanish
+query = "RaulSendic_uy"
 language = "es"
-# Calling the funciton
-results = api.search( q = query, lang = language)
+count_tweets = 100
+contador = 0
+with open("RaulSendic_uy.txt", "w") as text_file:
+    for tweet in tweepy.Cursor(api.search,
+                               q= query,
+                               count=count_tweets,
+                               lang= language).items():
+        print ("\n\t@"+ tweet.user.screen_name," Tweetió:"+ "\n\t" + tweet.text, file = text_file)
+        contador = contador + 1
+print (str(contador))
+# Calling the function
+#resTweets = api.search(q = query, rpp = count, lang = language,)
 #printing results
-for tweet in results:
-    print (tweet.user.screen_name,"tweetio: ",tweet.text)
+#text_list = []
+#for tweet in resTweets:
+ #   print ("\n\t@"+ tweet.user.screen_name," Tweetió:"+ "\n\t" + tweet.text) #Debugging
+    #text_list.append(tweet.user.screen_name + tweet.text)
+#print (text_list)
+#Query a Monkeylearn
+#for comment in text_list: 
+ #   resML = ML.classifiers.classify(MODULE_ID, text_list, sandbox=False)
+#for items in text_list.index,resML.result:
+ #   print(items)
