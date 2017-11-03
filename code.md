@@ -18,13 +18,13 @@ cada API requiere de un **Token** para autenticar al usuario.
 * Se agregan las credenciales para la autorización.
 ```python
 #Monkerlearn Developer APP Credentials
-ML = MonkeyLearn('44c6c8526ae93145ec2e9809fe307f0d1c07510c')
+ML = MonkeyLearn('44c6c85adasdse307f0d1c07510c')
 MODULE_ID = 'cl_u9PRHNzf'
 # Twitter Developer APP Credentials
-API_KEY = 'xMtlmTsU6CK6Z1nEHva4tMPkS6u6npS6u6npjZ'
-API_SECRET = 'jbKHeL2cNGevilZVS6u6np2v5'
-ACCESS_TOKEN = '8-W2bIaCbzS6u6npSQCcT5UKcZAEdNHBTgB6iA8S6u6npB'
-ACCESS_TOKEN_SECRET = 'RrYXl0344712NcO1gX6LwOFd64cjJP'
+API_KEY = 'xMtlmTsU6CK6Z1nEasdadsd6npS6u6npjZ'
+API_SECRET = 'jbKHeL2cNGasdadasd6np2v5'
+ACCESS_TOKEN = '8-W2bIaCbzS6u6npSasdasdasd6iA8S6u6npB'
+ACCESS_TOKEN_SECRET = 'RasdadrYXlasdasdd64cjJP'
 ```
 
 Estos **Tokens** se pasan como parametros los objetos de autenticación.
